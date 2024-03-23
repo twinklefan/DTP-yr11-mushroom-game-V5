@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Font/new_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scripts/Menu.gd" type="Script" id=2]
+
+[node name="Menu" type="Panel"]
+margin_left = 148.0
+margin_top = 102.0
+margin_right = 910.0
+margin_bottom = 533.0
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 5.0
+margin_top = 6.0
+margin_right = 754.0
+margin_bottom = 125.0
+custom_fonts/font = ExtResource( 1 )
+text = "MENU"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="."]
+margin_left = 208.0
+margin_top = 108.0
+margin_right = 560.0
+margin_bottom = 163.0
+text = "Exit (WON'T SAVE)"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 208.0
+margin_top = 180.0
+margin_right = 560.0
+margin_bottom = 235.0
+text = "Resume"
+
+[connection signal="button_down" from="Button" to="." method="_on_Button_button_down"]
+[connection signal="button_down" from="Button2" to="." method="_on_Button2_button_down"]

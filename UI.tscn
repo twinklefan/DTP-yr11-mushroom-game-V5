@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://images/water2.png" type="Texture" id=1]
+[ext_resource path="res://Font/new_dynamicfont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://scripts/UI.gd" type="Script" id=3]
+[ext_resource path="res://images/water3.png" type="Texture" id=4]
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="ScoreText" type="Label" parent="."]
+margin_left = 72.0
+margin_top = 24.0
+margin_right = 264.0
+margin_bottom = 70.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "00"
+
+[node name="Water3" type="Sprite" parent="."]
+position = Vector2( 46, 54 )
+rotation = -0.496964
+scale = Vector2( 0.101972, 0.101102 )
+texture = ExtResource( 4 )
+
+[node name="Water2" type="Sprite" parent="."]
+position = Vector2( 48, 48 )
+scale = Vector2( 0.385, 0.385 )
+texture = ExtResource( 1 )

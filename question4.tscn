@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Font/new_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scripts/question4.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.682353, 0.890196, 0.917647, 0.521569 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.72549, 0.831373, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.584314, 0.72549, 1, 1 )
+
+[node name="question4" type="Panel"]
+margin_right = 749.0
+margin_bottom = 260.0
+rect_pivot_offset = Vector2( -128, -40 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 2 )
+
+[node name="question title" type="Label" parent="."]
+margin_left = 26.0
+margin_top = 20.0
+margin_right = 330.0
+margin_bottom = 66.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Which is a correct?"
+
+[node name="btnCorrect" type="Button" parent="."]
+margin_left = 32.0
+margin_top = 88.0
+margin_right = 579.0
+margin_bottom = 328.0
+rect_scale = Vector2( 0.6, 0.6 )
+custom_fonts/font = ExtResource( 1 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+text = "if colour == \"green\":"
+
+[node name="btnWrong" type="Button" parent="."]
+margin_left = 400.0
+margin_top = 88.0
+margin_right = 947.0
+margin_bottom = 328.0
+rect_scale = Vector2( 0.6, 0.6 )
+custom_fonts/font = ExtResource( 1 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+text = "if colour = \"green\":"
+
+[connection signal="button_down" from="btnCorrect" to="." method="_on_btnCorrect_button_down"]
+[connection signal="button_down" from="btnWrong" to="." method="_on_btnWrong_button_down"]

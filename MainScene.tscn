@@ -1,0 +1,2352 @@
+[gd_scene load_steps=56 format=2]
+
+[ext_resource path="res://Tiles/Tile_suspended_left.tscn" type="PackedScene" id=1]
+[ext_resource path="res://flag.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Tiles/Tile_grass_middle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Blue.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Tiles/Wall_end_left.tscn" type="PackedScene" id=8]
+[ext_resource path="res://question1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Tiles/Tile_suspended_middle.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Tiles/Wall_end_right.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Tiles/Tile_left.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Coin.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Tiles/.tscn" type="PackedScene" id=14]
+[ext_resource path="res://extraBlue.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Tiles/Tile_right.tscn" type="PackedScene" id=16]
+[ext_resource path="res://CanvasLayer.gd" type="Script" id=17]
+[ext_resource path="res://images/Tilesets/Sky@3x.png" type="Texture" id=18]
+[ext_resource path="res://scripts/CameraController.gd" type="Script" id=19]
+[ext_resource path="res://images/Tilesets/Bush Plant 1@3x.png" type="Texture" id=20]
+[ext_resource path="res://images/Tilesets/Bush 1@3x.png" type="Texture" id=21]
+[ext_resource path="res://images/Tilesets/Baby Tree 3@3x.png" type="Texture" id=22]
+[ext_resource path="res://images/Tilesets/Bush 2@3x.png" type="Texture" id=23]
+[ext_resource path="res://images/Tilesets/Bush Plant 4@3x.png" type="Texture" id=24]
+[ext_resource path="res://images/Tilesets/Baby Tree 2@3x.png" type="Texture" id=25]
+[ext_resource path="res://images/Tilesets/Bush Plant 3@3x.png" type="Texture" id=26]
+[ext_resource path="res://images/Tilesets/Middle Tile@3x.png" type="Texture" id=27]
+[ext_resource path="res://Red.tscn" type="PackedScene" id=28]
+[ext_resource path="res://images/Tilesets/Bush 3@3x.png" type="Texture" id=29]
+[ext_resource path="res://images/Tilesets/Baby Tree 1@3x.png" type="Texture" id=30]
+[ext_resource path="res://images/Tilesets/Tree 2@3x.png" type="Texture" id=31]
+[ext_resource path="res://images/Tilesets/Valley Back@3x.png" type="Texture" id=32]
+[ext_resource path="res://images/Tilesets/Valley Front@3x.png" type="Texture" id=33]
+[ext_resource path="res://images/Tilesets/Tree 1@3x.png" type="Texture" id=34]
+[ext_resource path="res://Tiles/Floor tile 1pc.tscn" type="PackedScene" id=35]
+[ext_resource path="res://Rock1.tscn" type="PackedScene" id=36]
+[ext_resource path="res://extraLightGreen.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Enemy2.tscn" type="PackedScene" id=38]
+[ext_resource path="res://question2.tscn" type="PackedScene" id=39]
+[ext_resource path="res://btnPink.tscn" type="PackedScene" id=40]
+[ext_resource path="res://extraPink.tscn" type="PackedScene" id=41]
+[ext_resource path="res://question3.tscn" type="PackedScene" id=42]
+[ext_resource path="res://btnPurple.tscn" type="PackedScene" id=43]
+[ext_resource path="res://extraPurple.tscn" type="PackedScene" id=44]
+[ext_resource path="res://question4.tscn" type="PackedScene" id=45]
+[ext_resource path="res://barrel.tscn" type="PackedScene" id=46]
+[ext_resource path="res://btnOrange.tscn" type="PackedScene" id=47]
+[ext_resource path="res://question5.tscn" type="PackedScene" id=48]
+[ext_resource path="res://extraOrange.tscn" type="PackedScene" id=49]
+[ext_resource path="res://btnLightGreen.tscn" type="PackedScene" id=50]
+[ext_resource path="res://images/Tilesets/Tree 4@3x.png" type="Texture" id=51]
+[ext_resource path="res://images/Tilesets/Bush Plant 2@3x.png" type="Texture" id=52]
+[ext_resource path="res://extraChirstmasHat.tscn" type="PackedScene" id=53]
+[ext_resource path="res://question6.tscn" type="PackedScene" id=54]
+[ext_resource path="res://btnXmasHat.tscn" type="PackedScene" id=55]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="Background" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Sky" type="Sprite" parent="Background"]
+position = Vector2( 567, 312 )
+scale = Vector2( 0.171162, 0.171162 )
+texture = ExtResource( 18 )
+
+[node name="ValleyBack" type="Sprite" parent="Background"]
+position = Vector2( 566.798, 447 )
+scale = Vector2( 0.171257, 0.171348 )
+texture = ExtResource( 32 )
+
+[node name="ValleyFront" type="Sprite" parent="Background"]
+position = Vector2( 567.399, 516 )
+scale = Vector2( 0.171075, 0.171348 )
+texture = ExtResource( 33 )
+
+[node name="Sky2" type="Sprite" parent="Background"]
+position = Vector2( -566.595, 311.875 )
+scale = Vector2( 0.171162, 0.171162 )
+texture = ExtResource( 18 )
+
+[node name="ValleyBack2" type="Sprite" parent="Background"]
+position = Vector2( -565.797, 445.875 )
+scale = Vector2( 0.171257, 0.171348 )
+texture = ExtResource( 32 )
+
+[node name="ValleyFront2" type="Sprite" parent="Background"]
+position = Vector2( -565.196, 514.875 )
+scale = Vector2( 0.171075, 0.171348 )
+texture = ExtResource( 33 )
+
+[node name="Sky3" type="Sprite" parent="Background"]
+position = Vector2( 1700, 312 )
+scale = Vector2( 0.171162, 0.171162 )
+texture = ExtResource( 18 )
+
+[node name="ValleyBack3" type="Sprite" parent="Background"]
+position = Vector2( 1700, 448 )
+scale = Vector2( 0.171257, 0.171348 )
+texture = ExtResource( 32 )
+
+[node name="ValleyFront3" type="Sprite" parent="Background"]
+position = Vector2( 1697, 516 )
+scale = Vector2( 0.171075, 0.171348 )
+texture = ExtResource( 33 )
+
+[node name="Sky4" type="Sprite" parent="Background"]
+position = Vector2( 2826.6, 311.875 )
+scale = Vector2( 0.171162, 0.171162 )
+texture = ExtResource( 18 )
+
+[node name="ValleyBack4" type="Sprite" parent="Background"]
+position = Vector2( 2826.6, 446.875 )
+scale = Vector2( 0.171257, 0.171348 )
+texture = ExtResource( 32 )
+
+[node name="ValleyFront4" type="Sprite" parent="Background"]
+position = Vector2( 2825.6, 516.875 )
+scale = Vector2( 0.171075, 0.171348 )
+texture = ExtResource( 33 )
+
+[node name="Sky7" type="Sprite" parent="Background"]
+position = Vector2( 3956.6, 311.875 )
+scale = Vector2( 0.171162, 0.171162 )
+texture = ExtResource( 18 )
+
+[node name="ValleyBack7" type="Sprite" parent="Background"]
+position = Vector2( 3956.6, 445.875 )
+scale = Vector2( 0.171257, 0.171348 )
+texture = ExtResource( 32 )
+
+[node name="ValleyFront7" type="Sprite" parent="Background"]
+position = Vector2( 3955.6, 516.875 )
+scale = Vector2( 0.171075, 0.171348 )
+texture = ExtResource( 33 )
+
+[node name="Sky8" type="Sprite" parent="Background"]
+position = Vector2( 5756, 864.001 )
+scale = Vector2( 0.171162, 0.171162 )
+texture = ExtResource( 18 )
+offset = Vector2( -3899.23, -3225.75 )
+
+[node name="ValleyBack8" type="Sprite" parent="Background"]
+position = Vector2( 5757, 864.001 )
+scale = Vector2( 0.171257, 0.171348 )
+texture = ExtResource( 32 )
+offset = Vector2( -3897.07, -2440.21 )
+
+[node name="ValleyFront8" type="Sprite" parent="Background"]
+position = Vector2( 5757, 864.001 )
+scale = Vector2( 0.171075, 0.171348 )
+texture = ExtResource( 33 )
+offset = Vector2( -3907.06, -2025.85 )
+
+[node name="Sky9" type="Sprite" parent="Background"]
+position = Vector2( 6220.6, 311.875 )
+scale = Vector2( 0.171162, 0.171162 )
+texture = ExtResource( 18 )
+
+[node name="ValleyBack9" type="Sprite" parent="Background"]
+position = Vector2( 6220.6, 444.875 )
+scale = Vector2( 0.171257, 0.171348 )
+texture = ExtResource( 32 )
+
+[node name="ValleyFront9" type="Sprite" parent="Background"]
+position = Vector2( 6220.6, 515.875 )
+scale = Vector2( 0.171075, 0.171348 )
+texture = ExtResource( 33 )
+
+[node name="Sky10" type="Sprite" parent="Background"]
+position = Vector2( 8021, 864.001 )
+scale = Vector2( 0.171162, 0.171162 )
+texture = ExtResource( 18 )
+offset = Vector2( -3899.23, -3225.75 )
+
+[node name="ValleyBack10" type="Sprite" parent="Background"]
+position = Vector2( 8020, 863.001 )
+scale = Vector2( 0.171257, 0.171348 )
+texture = ExtResource( 32 )
+offset = Vector2( -3897.07, -2440.21 )
+
+[node name="ValleyFront10" type="Sprite" parent="Background"]
+position = Vector2( 8021, 863.001 )
+scale = Vector2( 0.171075, 0.171348 )
+texture = ExtResource( 33 )
+offset = Vector2( -3907.06, -2025.85 )
+
+[node name="Sky11" type="Sprite" parent="Background"]
+position = Vector2( 8485.89, 310.875 )
+scale = Vector2( 0.171162, 0.171162 )
+texture = ExtResource( 18 )
+
+[node name="ValleyBack11" type="Sprite" parent="Background"]
+position = Vector2( 8486.89, 443.875 )
+scale = Vector2( 0.171257, 0.171348 )
+texture = ExtResource( 32 )
+
+[node name="ValleyFront11" type="Sprite" parent="Background"]
+position = Vector2( 8485.89, 514.875 )
+scale = Vector2( 0.171075, 0.171348 )
+texture = ExtResource( 33 )
+
+[node name="Sky12" type="Sprite" parent="Background"]
+position = Vector2( 10286.3, 863.001 )
+scale = Vector2( 0.171162, 0.171162 )
+texture = ExtResource( 18 )
+offset = Vector2( -3899.23, -3225.75 )
+
+[node name="ValleyBack12" type="Sprite" parent="Background"]
+position = Vector2( 10285.3, 862.001 )
+scale = Vector2( 0.171257, 0.171348 )
+texture = ExtResource( 32 )
+offset = Vector2( -3897.07, -2440.21 )
+
+[node name="ValleyFront12" type="Sprite" parent="Background"]
+position = Vector2( 10286.3, 862.001 )
+scale = Vector2( 0.171075, 0.171348 )
+texture = ExtResource( 33 )
+offset = Vector2( -3907.06, -2025.85 )
+
+[node name="Tree1" type="Sprite" parent="Background"]
+position = Vector2( 42.27, 315.587 )
+scale = Vector2( 0.0978653, 0.0978653 )
+texture = ExtResource( 34 )
+
+[node name="Bush1" type="Sprite" parent="Background"]
+position = Vector2( 276.728, 303.938 )
+scale = Vector2( 0.127667, 0.127667 )
+texture = ExtResource( 29 )
+
+[node name="Bush23x" type="Sprite" parent="Background"]
+position = Vector2( 655.966, 370.397 )
+scale = Vector2( 0.159331, 0.159331 )
+texture = ExtResource( 23 )
+
+[node name="BabyTree13x" type="Sprite" parent="Background"]
+position = Vector2( 392, 248 )
+scale = Vector2( 0.153083, 0.153083 )
+texture = ExtResource( 30 )
+
+[node name="Tree23x" type="Sprite" parent="Background"]
+position = Vector2( 939.261, 207.053 )
+rotation = 3.14159
+scale = Vector2( 0.188041, -0.188041 )
+texture = ExtResource( 31 )
+
+[node name="BushPlant13x2" type="Sprite" parent="Background"]
+position = Vector2( 3361.76, 368.348 )
+scale = Vector2( 0.26865, 0.26865 )
+texture = ExtResource( 20 )
+
+[node name="BabyTree13x2" type="Sprite" parent="Background"]
+position = Vector2( 3733, 328 )
+scale = Vector2( 0.283333, 0.283333 )
+texture = ExtResource( 30 )
+
+[node name="Bush33x2" type="Sprite" parent="Background"]
+position = Vector2( 4546, 176 )
+scale = Vector2( 0.171333, 0.171333 )
+texture = ExtResource( 29 )
+
+[node name="BushPlant43x" type="Sprite" parent="Background"]
+position = Vector2( 872, 369 )
+scale = Vector2( 0.156061, 0.156061 )
+texture = ExtResource( 24 )
+
+[node name="BabyTree23x" type="Sprite" parent="Background"]
+position = Vector2( 762, 122 )
+scale = Vector2( 0.218064, 0.218064 )
+texture = ExtResource( 25 )
+
+[node name="Tree13x" type="Sprite" parent="Background"]
+position = Vector2( 2955, 312 )
+scale = Vector2( 0.111016, 0.111016 )
+texture = ExtResource( 34 )
+
+[node name="Tree43x" type="Sprite" parent="Background"]
+position = Vector2( 3997.43, 306.086 )
+scale = Vector2( 0.14464, 0.14464 )
+texture = ExtResource( 51 )
+
+[node name="BabyTree13x3" type="Sprite" parent="Background"]
+position = Vector2( 7476, 146 )
+scale = Vector2( 0.33887, 0.339411 )
+texture = ExtResource( 30 )
+
+[node name="Bush33x" type="Sprite" parent="Background"]
+position = Vector2( 1539.73, 350.938 )
+scale = Vector2( 0.165003, 0.165003 )
+texture = ExtResource( 29 )
+
+[node name="BushPlant33x" type="Sprite" parent="Background"]
+position = Vector2( 1780, 224 )
+scale = Vector2( 0.202007, 0.202007 )
+texture = ExtResource( 26 )
+
+[node name="Tree23x2" type="Sprite" parent="Background"]
+position = Vector2( 5192, 318.596 )
+scale = Vector2( 0.301729, 0.272093 )
+texture = ExtResource( 31 )
+
+[node name="BabyTree33x" type="Sprite" parent="Background"]
+position = Vector2( 1328, 194 )
+scale = Vector2( 0.328431, 0.328431 )
+texture = ExtResource( 22 )
+
+[node name="Bush23x2" type="Sprite" parent="Background"]
+position = Vector2( 1936, 420 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 23 )
+
+[node name="Bush13x" type="Sprite" parent="Background"]
+position = Vector2( 2262, 204 )
+scale = Vector2( 0.18254, 0.18254 )
+texture = ExtResource( 21 )
+
+[node name="BabyTree23x2" type="Sprite" parent="Background"]
+position = Vector2( 2144, 328 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 25 )
+
+[node name="Bush23x3" type="Sprite" parent="Background"]
+position = Vector2( 5437, 316 )
+scale = Vector2( 0.141599, 0.141599 )
+texture = ExtResource( 23 )
+
+[node name="BushPlant23x" type="Sprite" parent="Background"]
+position = Vector2( 5662, 174 )
+scale = Vector2( 0.206854, 0.206854 )
+texture = ExtResource( 52 )
+
+[node name="BushPlant33x2" type="Sprite" parent="Background"]
+position = Vector2( 5036.93, 259.611 )
+scale = Vector2( 0.206854, 0.206854 )
+texture = ExtResource( 26 )
+
+[node name="Bush23x4" type="Sprite" parent="Background"]
+position = Vector2( 5998, 393 )
+scale = Vector2( 0.141599, 0.141599 )
+texture = ExtResource( 23 )
+
+[node name="Bush33x3" type="Sprite" parent="Background"]
+position = Vector2( 6373.03, 166.851 )
+scale = Vector2( 0.139464, 0.139464 )
+texture = ExtResource( 29 )
+
+[node name="BushPlant33x3" type="Sprite" parent="Background"]
+position = Vector2( 6888.01, 175.688 )
+scale = Vector2( 0.193594, 0.193594 )
+texture = ExtResource( 26 )
+
+[node name="Rock1" parent="Background" instance=ExtResource( 36 )]
+position = Vector2( 53, 440 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Rock2" parent="Background" instance=ExtResource( 36 )]
+position = Vector2( 1528, 129 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Rock4" parent="Background" instance=ExtResource( 36 )]
+position = Vector2( 3671, 446 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Rock7" parent="Background" instance=ExtResource( 36 )]
+position = Vector2( 6992, 196 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Rock8" parent="Background" instance=ExtResource( 36 )]
+position = Vector2( 6400, 179 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Rock5" parent="Background" instance=ExtResource( 36 )]
+position = Vector2( 2967, 443 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Rock6" parent="Background" instance=ExtResource( 36 )]
+position = Vector2( 2526, 151 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="barrel11" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6677, 335 )
+
+[node name="barrel3" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 2189, 416 )
+
+[node name="barrel2" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6194, 643 )
+
+[node name="barrel4" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6194, 580 )
+
+[node name="barrel5" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6194, 517 )
+
+[node name="barrel12" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6194, 453 )
+
+[node name="barrel13" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6194, 390 )
+
+[node name="barrel14" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6194, 327 )
+
+[node name="barrel6" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 5784, 605 )
+
+[node name="barrel7" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 5784, 541 )
+
+[node name="barrel8" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 5784, 478 )
+
+[node name="barrel9" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 5784, 415 )
+
+[node name="barrel10" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 5784, 352 )
+
+[node name="Tree13x2" type="Sprite" parent="Background"]
+position = Vector2( 6556.9, 204.645 )
+scale = Vector2( 0.123402, 0.123402 )
+texture = ExtResource( 34 )
+
+[node name="barrel15" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6800, 685 )
+
+[node name="barrel16" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6800, 622 )
+
+[node name="barrel17" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6800, 559 )
+
+[node name="barrel18" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6800, 495 )
+
+[node name="barrel19" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 6800, 432 )
+
+[node name="barrel20" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 2624, 725 )
+
+[node name="barrel21" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 2624, 662 )
+
+[node name="barrel22" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 2624, 599 )
+
+[node name="barrel23" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 2624, 535 )
+
+[node name="barrel24" parent="Background" instance=ExtResource( 46 )]
+position = Vector2( 2624, 472 )
+
+[node name="Collectables" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Coin" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 416, 296 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin4" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 163, 431 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin5" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 48, 259 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin6" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 612, 370 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin7" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 495, 114 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin2" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 861, 183 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin3" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 1158, 244 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin8" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 976, 360 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin9" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 1540.73, 326.938 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin10" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 1528, 32 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin13" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 1992, 112 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin15" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 2961, 296 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin17" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 3368, 322 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin18" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 3728, 270 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin19" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 3904, 424 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin20" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 3904, 150 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin21" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 3440, 88 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin22" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 4336, 216 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin23" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 4792, 166 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin24" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 6027, 305 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin25" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 5720, 72 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin26" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 6000, 248 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin14" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 2172, 352 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin11" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 2096, 236 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Coin12" parent="Collectables" instance=ExtResource( 13 )]
+position = Vector2( 1785, 195 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Enemys" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Lava31" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 240, 608 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava32" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 360, 608 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava33" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 480, 608 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava26" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 240, 576 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava29" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 360, 576 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava30" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 480, 576 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava19" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 240, 544 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava18" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 360, 544 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava20" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 480, 544 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava66" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 240, 512 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava67" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 360, 512 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava68" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 480, 512 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava22" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 240, 480 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava23" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 360, 480 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava24" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 480, 480 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava34" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 600, 608 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava35" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 600, 576 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava21" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 600, 544 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava27" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( -179, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava28" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( -59, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava36" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( -420, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava37" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( -300, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava178" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5974, 601 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava38" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( -665, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava39" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( -545, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava40" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( -906, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava41" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( -786, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava64" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( -1145, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava65" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( -1025, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava42" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 1676, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava43" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 1796, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava44" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 1435, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava45" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 1555, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava46" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 1190, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava47" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 1310, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava48" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 949, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava49" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 1069, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava50" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2516, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava51" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2636, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava52" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2275, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava53" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2395, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava55" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6194, 604 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava56" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5856, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava57" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3371, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava58" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3489, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava59" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3128, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava60" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3248, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava61" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2883, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava62" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3003, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava63" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2762, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava88" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2516, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava89" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2636, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava90" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2275, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava91" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2395, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava69" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2152, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava70" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 1912, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava71" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2032, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava192" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2153, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava194" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2040, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava92" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5976, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava93" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3371, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava94" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3489, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava95" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3128, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava96" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3248, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava97" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2883, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava98" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3003, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava99" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2762, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava100" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3982, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava101" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4102, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava102" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3741, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava103" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3861, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava104" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3614, 599 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava105" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4835, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava106" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4955, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava107" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4594, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava108" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4714, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava109" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4349, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava110" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4469, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava111" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4228, 600 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava112" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3982, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava113" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4102, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava114" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3741, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava115" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3861, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava116" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3614, 567 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava117" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4835, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava118" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4955, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava119" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4594, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava120" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4714, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava121" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4349, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava122" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4469, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava123" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4228, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava172" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5242, 601 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava173" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5362, 601 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava174" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5121, 601 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava175" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6096, 601 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava176" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6215, 601 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava177" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5854, 601 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava179" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5609, 601 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava180" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5729, 601 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava181" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5488, 601 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava182" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5242, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava183" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5362, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava184" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5121, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava185" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6096, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava186" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6215, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava187" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5854, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava189" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5609, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava190" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5729, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava191" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 5488, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava72" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7073, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava188" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6459, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava193" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6579, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava195" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6338, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava196" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7071, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava197" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6826, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava198" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6946, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava199" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6705, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava200" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6459, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava201" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6579, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava202" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6338, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava203" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7071, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava204" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6826, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava205" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6946, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava206" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 6705, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava207" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7196, 601 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava208" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7196, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava73" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8054, 568 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava209" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7440, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava210" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7560, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava211" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7319, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava212" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8052, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava213" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7807, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava214" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7927, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava215" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7686, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava216" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7440, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava217" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7560, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava218" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7319, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava219" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8052, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava220" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7807, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava221" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7927, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava222" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 7686, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava223" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8178, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava224" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8178, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava74" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9036, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava225" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8422, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava226" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8542, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava227" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8301, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava228" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9034, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava229" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8789, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava230" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8909, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava231" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8668, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava232" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8422, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava233" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8542, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava234" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8301, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava235" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9034, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava236" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8789, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava237" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8909, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava238" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 8668, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava239" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9159, 602 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava240" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9159, 570 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava75" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 10017, 569 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava241" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9403, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava242" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9523, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava243" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9282, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava244" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 10015, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava245" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9770, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava246" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9890, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava247" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9649, 603 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava248" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9403, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava249" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9523, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava250" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9282, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava251" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 10015, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava252" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9770, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava253" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9890, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava254" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 9649, 571 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava124" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2516, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava125" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2636, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava126" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2275, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava127" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2395, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava128" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2150, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava129" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3371, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava130" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3489, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava131" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3128, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava132" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3248, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava133" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2883, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava134" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3003, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava135" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2762, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava136" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2516, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava137" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2636, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava138" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2275, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava139" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2395, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava140" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2150, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava141" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3371, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava142" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3489, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava143" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3128, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava144" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3248, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava145" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2883, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava146" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3003, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava147" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 2762, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava148" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3982, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava149" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4102, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava150" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3741, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava151" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3861, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava152" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3614, 536 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava153" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4835, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava154" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4955, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava155" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4594, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava156" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4714, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava157" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4349, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava158" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4469, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava159" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4228, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava160" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3998, 505 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava161" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4102, 505 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava162" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3741, 505 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava163" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3861, 505 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava164" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 3614, 504 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava167" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4594, 505 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava168" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4714, 505 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava169" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4349, 505 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava170" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4469, 505 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Lava171" parent="Enemys" instance=ExtResource( 5 )]
+position = Vector2( 4228, 505 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Area2D2" parent="Enemys" instance=ExtResource( 38 )]
+position = Vector2( 1990, 429 )
+scale = Vector2( 1.5, 2 )
+
+[node name="Area2D3" parent="Enemys" instance=ExtResource( 38 )]
+position = Vector2( 6995, 200 )
+scale = Vector2( 2, 2 )
+
+[node name="Area2D4" parent="Enemys" instance=ExtResource( 38 )]
+position = Vector2( 768, 375 )
+scale = Vector2( 1.5, 2 )
+
+[node name="Extra tiles" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="MiddleTile3x2" type="Sprite" parent="Extra tiles"]
+position = Vector2( 97, 544 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x3" type="Sprite" parent="Extra tiles"]
+position = Vector2( 671, 480 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x4" type="Sprite" parent="Extra tiles"]
+position = Vector2( 734, 480 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x5" type="Sprite" parent="Extra tiles"]
+position = Vector2( 797, 480 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x9" type="Sprite" parent="Extra tiles"]
+position = Vector2( 671, 544 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x10" type="Sprite" parent="Extra tiles"]
+position = Vector2( 734, 544 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x11" type="Sprite" parent="Extra tiles"]
+position = Vector2( 797, 544 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x16" type="Sprite" parent="Extra tiles"]
+position = Vector2( 97, 608 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x17" type="Sprite" parent="Extra tiles"]
+position = Vector2( 671, 608 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x6" type="Sprite" parent="Extra tiles"]
+position = Vector2( 608, 481 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x12" type="Sprite" parent="Extra tiles"]
+position = Vector2( 608, 544 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x20" type="Sprite" parent="Extra tiles"]
+position = Vector2( 608, 608 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x18" type="Sprite" parent="Extra tiles"]
+position = Vector2( 734, 608 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x19" type="Sprite" parent="Extra tiles"]
+position = Vector2( 797, 608 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x7" type="Sprite" parent="Extra tiles"]
+position = Vector2( 34, 544 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x21" type="Sprite" parent="Extra tiles"]
+position = Vector2( 34, 608 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x8" type="Sprite" parent="Extra tiles"]
+position = Vector2( -29, 544 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x22" type="Sprite" parent="Extra tiles"]
+position = Vector2( -29, 608 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x13" type="Sprite" parent="Extra tiles"]
+position = Vector2( -92, 544 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="MiddleTile3x23" type="Sprite" parent="Extra tiles"]
+position = Vector2( -92, 608 )
+scale = Vector2( 0.152381, 0.152381 )
+texture = ExtResource( 27 )
+
+[node name="btnPink" parent="." instance=ExtResource( 40 )]
+visible = false
+position = Vector2( 3623, 96 )
+scale = Vector2( 2, 2 )
+
+[node name="btnPurple" parent="." instance=ExtResource( 43 )]
+visible = false
+position = Vector2( 2621, 418 )
+scale = Vector2( 2, 2 )
+
+[node name="btnOrange" parent="." instance=ExtResource( 47 )]
+visible = false
+position = Vector2( 5362, 310 )
+scale = Vector2( 2, 2 )
+
+[node name="btnLightGreen" parent="." instance=ExtResource( 50 )]
+visible = false
+position = Vector2( 1696, 471 )
+scale = Vector2( 2, 2 )
+
+[node name="btnXmasHat" parent="." instance=ExtResource( 55 )]
+visible = false
+position = Vector2( 7064, 432 )
+scale = Vector2( 2, 2 )
+
+[node name="Blue" parent="." instance=ExtResource( 7 )]
+visible = false
+position = Vector2( 331, 296 )
+
+[node name="Red" parent="." instance=ExtResource( 28 )]
+position = Vector2( -64, 688 )
+scale = Vector2( 2, 2 )
+
+[node name="extraBlue" parent="." instance=ExtResource( 15 )]
+position = Vector2( 321, 301 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="extraLightGreen" parent="." instance=ExtResource( 37 )]
+position = Vector2( 1697, 483 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="extraPurple" parent="." instance=ExtResource( 44 )]
+position = Vector2( 2621, 420 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="extraPink" parent="." instance=ExtResource( 41 )]
+position = Vector2( 3623, 99 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="extraChirstmasHat" parent="." instance=ExtResource( 53 )]
+position = Vector2( 7066, 438 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="extraOrange" parent="." instance=ExtResource( 49 )]
+position = Vector2( 5364, 318 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( -104, 26 )
+
+[node name="Tiles" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Tile_suspended_left12" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 1670, 524 )
+
+[node name="Tile_suspended_left" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 225, 352 )
+
+[node name="Tile_suspended_middle2" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 350, 352 )
+
+[node name="Tile_grass_middle" parent="Tiles" instance=ExtResource( 4 )]
+position = Vector2( 96.9999, 482 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_suspended_right" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 413, 352 )
+
+[node name="Tile_suspended_middle" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 288, 352 )
+
+[node name="Tile_suspended_left2" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 4133, 342 )
+
+[node name="Tile_suspended_middle14" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 4258, 342 )
+
+[node name="Tile_suspended_right14" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 4321, 342 )
+
+[node name="Tile_suspended_middle15" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 4196, 342 )
+
+[node name="Tile_suspended_left3" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 3608, 149 )
+
+[node name="Tile_suspended_right16" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 3733, 149 )
+
+[node name="Tile_suspended_middle16" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 3671, 149 )
+
+[node name="Tile_suspended_left15" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 5304, 362 )
+
+[node name="Tile_suspended_right17" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 5429, 362 )
+
+[node name="Tile_suspended_middle17" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 5367, 362 )
+
+[node name="Tile_suspended_left18" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 6326, 216 )
+
+[node name="Tile_suspended_right20" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 6451, 216 )
+
+[node name="Tile_suspended_middle20" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 6389, 216 )
+
+[node name="Tile_suspended_left19" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 6549, 394 )
+
+[node name="Tile_suspended_right21" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 6674, 394 )
+
+[node name="Tile_suspended_middle21" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 6612, 394 )
+
+[node name="Tile_suspended_left21" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 6978, 490 )
+
+[node name="Tile_suspended_right24" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 7103, 490 )
+
+[node name="Tile_suspended_middle27" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 7041, 490 )
+
+[node name="Tile_suspended_left20" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 6871, 243 )
+
+[node name="Tile_suspended_right22" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 7121, 243 )
+
+[node name="Tile_suspended_middle22" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 6934, 243 )
+
+[node name="Tile_suspended_middle23" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 6997, 243 )
+
+[node name="Tile_suspended_middle24" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 7059, 243 )
+
+[node name="Tile_suspended_right23" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 7628, 313 )
+
+[node name="Tile_suspended_middle25" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 7504, 313 )
+
+[node name="Tile_suspended_middle26" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 7566, 313 )
+
+[node name="Tile_suspended_left16" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 5559, 236 )
+
+[node name="Tile_suspended_right18" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 5684, 236 )
+
+[node name="Tile_suspended_middle18" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 5622, 236 )
+
+[node name="Tile_suspended_left17" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 5944, 434 )
+
+[node name="Tile_suspended_right19" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 6068, 434 )
+
+[node name="Tile_suspended_middle19" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 6006, 434 )
+
+[node name="Tile_suspended_middle3" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 737, 240 )
+
+[node name="Tile_suspended_middle5" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 800, 240 )
+
+[node name="Tile_suspended_middle6" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 920, 421 )
+
+[node name="Tile_suspended_right2" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 862, 240 )
+
+[node name="Tile_suspended_right3" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 983, 421 )
+
+[node name="Tile_suspended_middle4" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 674, 240 )
+
+[node name="Tile_right" parent="Tiles" instance=ExtResource( 16 )]
+position = Vector2( 160, 482 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_grass_middle3" parent="Tiles" instance=ExtResource( 4 )]
+position = Vector2( 734, 421 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_grass_middle4" parent="Tiles" instance=ExtResource( 4 )]
+position = Vector2( 671, 421 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_grass_middle6" parent="Tiles" instance=ExtResource( 4 )]
+position = Vector2( 797, 421 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_grass_middle5" parent="Tiles" instance=ExtResource( 4 )]
+position = Vector2( 2004, 474 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_grass_middle8" parent="Tiles" instance=ExtResource( 4 )]
+position = Vector2( 2067, 474 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_grass_middle7" parent="Tiles" instance=ExtResource( 4 )]
+position = Vector2( 858, 421 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_left" parent="Tiles" instance=ExtResource( 12 )]
+position = Vector2( 608, 421 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Floor tile 1pc" parent="Tiles" instance=ExtResource( 35 )]
+position = Vector2( 3363, 424 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_left4" parent="Tiles" instance=ExtResource( 12 )]
+position = Vector2( 3671, 487 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Floor tile 1pc2" parent="Tiles" instance=ExtResource( 35 )]
+position = Vector2( 3906, 246 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Floor tile 1pc3" parent="Tiles" instance=ExtResource( 35 )]
+position = Vector2( 4000, 490 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Floor tile 1pc7" parent="Tiles" instance=ExtResource( 35 )]
+position = Vector2( 3904, 507 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Floor tile 1pc5" parent="Tiles" instance=ExtResource( 35 )]
+position = Vector2( 4546, 226 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Floor tile 1pc6" parent="Tiles" instance=ExtResource( 35 )]
+position = Vector2( 4791, 331 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Floor tile 1pc4" parent="Tiles" instance=ExtResource( 35 )]
+position = Vector2( 5037, 312 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_left3" parent="Tiles" instance=ExtResource( 12 )]
+position = Vector2( 545, 482 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_left2" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 545, 544 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_left2" parent="Tiles" instance=ExtResource( 12 )]
+position = Vector2( -153, 482 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_left5" parent="Tiles" instance=ExtResource( 12 )]
+position = Vector2( 7442, 313 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_left6" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( -153, 544 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_left7" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( -153, 607 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_left3" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 545, 607 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_right" parent="Tiles" instance=ExtResource( 11 )]
+position = Vector2( 860, 483 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_right2" parent="Tiles" instance=ExtResource( 11 )]
+position = Vector2( 860, 546 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_left4" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 2004, 536 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_left8" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3361, 484 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left9" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3365, 485 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left10" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3362, 543 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left11" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3366, 544 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left12" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3362, 600 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left13" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3366, 601 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left16" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3669, 547 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left17" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3673, 548 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left18" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3669, 604 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left19" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3673, 605 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_right6" parent="Tiles" instance=ExtResource( 11 )]
+position = Vector2( 2063, 536 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_left30" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 2004, 599 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_right8" parent="Tiles" instance=ExtResource( 11 )]
+position = Vector2( 2063, 599 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_right3" parent="Tiles" instance=ExtResource( 11 )]
+position = Vector2( 860, 608 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_right4" parent="Tiles" instance=ExtResource( 11 )]
+position = Vector2( 160, 544 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_right5" parent="Tiles" instance=ExtResource( 11 )]
+position = Vector2( 160, 606 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_suspended_middle7" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 1297, 323 )
+
+[node name="Tile_suspended_right4" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 1359, 323 )
+
+[node name="Tile_suspended_middle9" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 1234, 323 )
+
+[node name="Tile_suspended_middle12" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 2126, 474 )
+
+[node name="Tile_suspended_right5" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 2188, 474 )
+
+[node name="Tile_suspended_middle11" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 1941, 474 )
+
+[node name="Tile_suspended_middle13" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 2550, 195 )
+
+[node name="Tile_suspended_right6" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 1569.73, 405.938 )
+
+[node name="Tile_suspended_right7" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 1556, 174 )
+
+[node name="Tile_suspended_right8" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 1812, 288 )
+
+[node name="Tile_suspended_right9" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 2020, 168 )
+
+[node name="Tile_suspended_right10" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 2292, 263 )
+
+[node name="Tile_suspended_right11" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 2613, 195 )
+
+[node name="Tile_suspended_right15" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 3733, 487 )
+
+[node name="Tile_suspended_middle8" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 3033, 480 )
+
+[node name="Tile_suspended_right12" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 3095, 480 )
+
+[node name="Tile_suspended_middle10" parent="Tiles" instance=ExtResource( 10 )]
+position = Vector2( 2970, 480 )
+
+[node name="Tile_suspended_right13" parent="Tiles" instance=ExtResource( 14 )]
+position = Vector2( 1730, 524 )
+
+[node name="Tile_grass_middle2" parent="Tiles" instance=ExtResource( 4 )]
+position = Vector2( 33.9999, 482 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_grass_middle9" parent="Tiles" instance=ExtResource( 4 )]
+position = Vector2( -29.0001, 482 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Tile_grass_middle10" parent="Tiles" instance=ExtResource( 4 )]
+position = Vector2( -92.0001, 482 )
+scale = Vector2( 0.151, 0.151 )
+
+[node name="Wall_end_left20" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 5035, 372 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left21" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 5039, 373 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left22" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 5035, 431 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left23" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 5039, 432 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left24" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 5035, 488 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left25" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 5039, 489 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left26" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 5035, 547 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left27" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 5039, 548 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left28" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 5035, 606 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left29" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 5039, 607 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left68" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 7440, 372 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left69" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 7444, 373 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left70" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 7440, 431 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left71" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 7444, 432 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left72" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 7440, 488 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left73" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 7444, 489 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left74" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 7440, 547 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left75" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 7444, 548 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left76" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 7440, 606 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left77" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 7444, 607 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left31" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4789, 392 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left32" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4793, 392 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left33" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4789, 450 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left34" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4794, 451 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left43" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4789, 507 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left44" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4794, 508 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left45" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4789, 566 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left47" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4794, 567 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left48" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4789, 625 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left49" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4794, 626 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left50" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4544, 287 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left51" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4548, 287 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left52" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4544, 345 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left53" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4549, 346 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left54" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4544, 402 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left55" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4549, 403 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left56" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4544, 461 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left57" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4549, 462 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left58" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4544, 520 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left63" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4548, 523 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left64" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4544, 579 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left65" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4550, 579 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left66" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4544, 637 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left67" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4549, 638 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left35" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3998, 549 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left36" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4002, 550 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left37" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3998, 608 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left38" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 4002, 608 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left39" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3902, 550 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left40" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3906, 568 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left41" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3902, 608 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left42" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3906, 608 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left46" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3906, 625 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left59" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3904, 305 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left60" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3908, 306 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left61" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3904, 362 )
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Wall_end_left62" parent="Tiles" instance=ExtResource( 8 )]
+position = Vector2( 3908, 363 )
+rotation = -3.14159
+scale = Vector2( 0.142, 0.142 )
+
+[node name="Tile_suspended_left4" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 1171, 323 )
+
+[node name="Tile_suspended_left5" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 1878, 474 )
+
+[node name="Tile_suspended_left6" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 1509.73, 405.938 )
+
+[node name="Tile_suspended_left7" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 1496, 174 )
+
+[node name="Tile_suspended_left8" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 1752, 288 )
+
+[node name="Tile_suspended_left9" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 1960, 168 )
+
+[node name="Tile_suspended_left10" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 2232, 263 )
+
+[node name="Tile_suspended_left11" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 2487, 195 )
+
+[node name="Tile_suspended_left13" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 2907, 480 )
+
+[node name="Tile_suspended_left14" parent="Tiles" instance=ExtResource( 1 )]
+position = Vector2( 611, 240 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+position = Vector2( 512, 296 )
+current = true
+script = ExtResource( 19 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
+visible = false
+script = ExtResource( 17 )
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource( 3 )]
+margin_top = 8.0
+margin_right = 8.0
+margin_bottom = 24.0
+
+[node name="question1" parent="." instance=ExtResource( 9 )]
+visible = false
+margin_left = -40.0
+margin_top = 176.0
+margin_right = 727.0
+margin_bottom = 448.0
+
+[node name="question2" parent="." instance=ExtResource( 39 )]
+visible = false
+margin_left = 1326.0
+margin_top = 262.0
+margin_right = 2085.0
+margin_bottom = 522.0
+
+[node name="question3" parent="." instance=ExtResource( 42 )]
+visible = false
+margin_left = 3293.0
+margin_right = 4042.0
+margin_bottom = 260.0
+
+[node name="question4" parent="." instance=ExtResource( 45 )]
+visible = false
+margin_left = 2244.0
+margin_top = 248.0
+margin_right = 2993.0
+margin_bottom = 508.0
+
+[node name="question5" parent="." instance=ExtResource( 48 )]
+visible = false
+margin_left = 5000.0
+margin_top = 160.0
+margin_right = 5749.0
+margin_bottom = 420.0
+
+[node name="question6" parent="." instance=ExtResource( 54 )]
+visible = false
+margin_left = 6688.0
+margin_top = 246.0
+margin_right = 7447.0
+margin_bottom = 506.0
+
+[node name="flag" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7577, 248 )
+scale = Vector2( 1.5, 1.5 )
+
+[connection signal="body_entered" from="extraBlue" to="question1" method="_on_extraBlue_body_entered"]
